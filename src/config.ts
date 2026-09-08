@@ -9,9 +9,9 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
+  name: "Eamon W.",
   logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  email: "eamon@vantern.org",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -36,13 +36,13 @@ export const navBarLinks: NavBarLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     title: "GitHub",
-    url: "https://github.com/TimWitzdam",
+    url: "https://github.com/doodles172",
     icon: "mdi:github",
     external: true,
   },
   {
     title: "Mail",
-    url: "mailto:tim@witzdam.com",
+    url: "mailto:eamon@vantern.org",
     icon: "mdi:email",
   },
 ];
@@ -50,14 +50,14 @@ export const socialLinks: SocialLink[] = [
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Eamon W.",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Student & full stack developer from the Netherlands who builds cool things.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "Student & Full Stack Developer",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "I'm Eamon W., a student & full stack developer from the Netherlands who builds cool things.",
   socialLinks: socialLinks,
   links: [
     {
@@ -74,18 +74,19 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Eamon W.",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Student & full stack developer from the Netherlands who builds cool things.",
     image: identity.logo,
   },
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
+I'm Eamon W., a student & full stack developer from the Netherlands who builds cool things.
 <br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+Most of my time goes into open source projects that make people's lives a little easier, whether that's a tool for students, something for developers or an app that people use daily.
+<br/><br/>
+Outside of code, I love design, art, science and anything tech related. I enjoy exploring nature, learning new skills, and meeting new people along the way.`, // Markdown is supported
     image_l: {
       url: "/demo-1.jpg",
       alt: "Left Picture",
@@ -99,22 +100,13 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
     description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
     items: [
       {
-        title: "Software Developer",
+        title: "Founder",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          name: "Vantern",
+          image: "/projects/vantern.png",
+          url: "https://vantern.org",
         },
-        date: "2021 - Present",
-      },
-      {
-        title: "Software Developer",
-        company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
-        },
-        date: "2019 - 2021",
+        date: "April 2026 - Present",
       },
     ],
   },
@@ -127,32 +119,25 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Eamon W.",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
   subtitle: "Check out what I've been working on.",
   projects: [
     {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
+      title: "LibreLearn",
+      description: "Librelearn is a free, open-source alternative to Studygo & Quizlet.",
+      image: "/projects/librelearn.png",
+      year: "2026",
+      url: "https://librelearn.nl",
     },
     {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
-    },
-    {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
+      title: "Quest Bot",
+      description: "Quest Bot is an opensource modern Discord Bot built for moderation, utilities and support.",
+      image: "/projects/questbot.png",
+      year: "2026",
+      url: "https://github.com/vantern-org/questbot",
     },
   ],
 };
@@ -160,7 +145,7 @@ export const projectsPageContent: ProjectPageContent = {
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
+    title: "Blog | Eamon W.",
     description: "Thoughts, stories and ideas.",
     image: identity.logo,
   },
