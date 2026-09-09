@@ -88,11 +88,11 @@ Most of my time goes into open source projects that make people's lives a little
 <br/><br/>
 Outside of code, I love design, art, science and anything tech related. I enjoy exploring nature, learning new skills, and meeting new people along the way.`, // Markdown is supported
     image_l: {
-      url: "/demo-1.jpg",
+      url: "/pictures/dog.jpg",
       alt: "Left Picture",
     },
     image_r: {
-      url: "/demo-1.jpg",
+      url: "/pictures/houses.jpg",
       alt: "Right Picture",
     },
   },
