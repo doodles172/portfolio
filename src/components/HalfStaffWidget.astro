@@ -1,0 +1,38 @@
+<a
+    id="half-staff-widget"
+    href="https://halfstaff.org/#:~:text=Active%20American%20Flag%20Half%20Staff%20Notices"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-0 right-3 sm:right-auto sm:left-6 z-50 w-[clamp(90px,24vw,180px)] cursor-pointer opacity-0 pointer-events-none translate-y-2 hover:translate-y-0 transition-all duration-300 ease-out"
+>
+    <img src="/half_flag.png" alt="" class="w-full h-auto" />
+</a>
+
+<script>
+    const API_URL = "https://halfstaff.org/wp-json/halfstaff/v1/widget";
+
+    const widget = document.getElementById(
+        "half-staff-widget",
+    ) as HTMLAnchorElement | null;
+    const img = widget?.querySelector("img");
+
+    if (!widget || !img) return;
+
+    fetch(API_URL, { signal: AbortSignal.timeout(8000) })
+        .then((response) => {
+            if (!response.ok) throw new Error("Bad response");
+            return response.json();
+        })
+        .then((data: { type?: string; title?: string; link?: string }) => {
+            if (!data?.type || data.type === "none") return;
+
+            const text =
+                data.title?.trim() || "US flags are currently at half-staff.";
+            img.alt = text;
+            widget.title = text;
+            if (data.link) widget.href = data.link;
+
+            widget.classList.remove("opacity-0", "pointer-events-none");
+        })
+        .catch(() => {});
+</script>
