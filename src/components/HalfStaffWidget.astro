@@ -16,23 +16,24 @@
     ) as HTMLAnchorElement | null;
     const img = widget?.querySelector("img");
 
-    if (!widget || !img) return;
+    if (widget && img) {
+        fetch(API_URL, { signal: AbortSignal.timeout(8000) })
+            .then((response) => {
+                if (!response.ok) throw new Error("Bad response");
+                return response.json();
+            })
+            .then((data: { type?: string; title?: string; link?: string }) => {
+                if (!data?.type || data.type === "none") return;
 
-    fetch(API_URL, { signal: AbortSignal.timeout(8000) })
-        .then((response) => {
-            if (!response.ok) throw new Error("Bad response");
-            return response.json();
-        })
-        .then((data: { type?: string; title?: string; link?: string }) => {
-            if (!data?.type || data.type === "none") return;
+                const text =
+                    data.title?.trim() ||
+                    "US flags are currently at half-staff.";
+                img.alt = text;
+                widget.title = text;
+                if (data.link) widget.href = data.link;
 
-            const text =
-                data.title?.trim() || "US flags are currently at half-staff.";
-            img.alt = text;
-            widget.title = text;
-            if (data.link) widget.href = data.link;
-
-            widget.classList.remove("opacity-0", "pointer-events-none");
-        })
-        .catch(() => {});
+                widget.classList.remove("opacity-0", "pointer-events-none");
+            })
+            .catch(() => {});
+    }
 </script>
