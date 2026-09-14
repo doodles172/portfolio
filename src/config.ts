@@ -36,7 +36,7 @@ export const navBarLinks: NavBarLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     title: "GitHub",
-    url: "https://github.com/doodles172",
+    url: "https://github.com/eamonwatson",
     icon: "mdi:github",
     external: true,
   },
