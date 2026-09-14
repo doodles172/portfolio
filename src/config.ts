@@ -9,7 +9,7 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Eamon W.",
+  name: "Eamon Watson",
   logo: "/logo.webp",
   email: "eamon@vantern.org",
 };
@@ -50,14 +50,14 @@ export const socialLinks: SocialLink[] = [
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Eamon W.",
+    title: "Eamon Watson",
     description:
       "Student & full stack developer from the Netherlands who builds cool things.",
     image: identity.logo,
   },
   role: "Student & Full Stack Developer",
   description:
-    "I'm Eamon W., a student & full stack developer from the Netherlands who builds cool things.",
+    "I'm Eamon Watson, a student & full stack developer from the Netherlands who builds cool things.",
   socialLinks: socialLinks,
   links: [
     {
@@ -82,7 +82,7 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Eamon W., a student & full stack developer from the Netherlands who builds cool things.
+I'm Eamon Watson, a student & full stack developer from the Netherlands who builds cool things.
 <br/><br/>
 Most of my time goes into open source projects that make people's lives a little easier, whether that's a tool for students, something for developers or an app that people use daily.
 <br/><br/>
