@@ -92,7 +92,7 @@ Outside of code, I love design, art, science and anything tech related. I enjoy 
       alt: "Left Picture",
     },
     image_r: {
-      url: "/pictures/houses.jpg",
+      url: "/pictures/plants.jpg",
       alt: "Right Picture",
     },
   },
