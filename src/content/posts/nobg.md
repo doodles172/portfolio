@@ -13,4 +13,4 @@ remove.bg is [shutting down](https://www.remove.bg/), and for the past while it 
 
 So I built [NoBG](https://nobg.eamonw.nl/), a free and open source background remover that runs the removal model yourself, no API key, no per-image cost, high rate limits, and no account.
 
-Check the public instance out at [nobg.eamonw.nl](https://nobg.eamonw.nl/) or the [GitHub repository](https://github.com/doodles172/nobg.git) if you want to self host it.
+Check the public instance out at [nobg.eamonw.nl](https://nobg.eamonw.nl/) or the [GitHub repository](https://github.com/eamonwatson/nobg.git) if you want to self host it.
