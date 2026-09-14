@@ -139,6 +139,13 @@ export const projectsPageContent: ProjectPageContent = {
       year: "2026",
       url: "https://github.com/vantern-org/questbot",
     },
+    {
+      title: "NoBG",
+      description: "NoBG is a FOSS image background remover.",
+      image: "/projects/nobg.png",
+      year: "2026",
+      url: "https://nobg.eamonw.nl",
+    }
   ],
 };
 
